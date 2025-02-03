@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myCV.css">
     <title>My CV</title>
 </head>
 <body>
     <header>
-        <img src="/profile/unnamed.2.jpg" alt="profile picture" height="300">
+        <img  class="profile-img" src="/profile/unnamed.2.jpg" alt="profile picture">
         <h1>Ian Loschinskey</h1>
         <h2>Associate Partner, Human Resource</h2>
     </header>
-        <aside>
+        <aside class="profile-info">
+            <div class="contact-details">
             <h3><b><u>Contact</u></b></h3>
             <p>Phone: 904-994-7802</p>
             <p>Email: ian.loschinskey@gmail.com</p>
             <p>Linkedin: <a href="https://www.linkedin.com/in/loschins/" target="_blank">https://www.linkedin.com/in/loschins/</a></p>
-            <section><h3><b><u>Skills</u></b></h3>
-                <h4><b><u>Technical Skills:</u></b></h4>
-                <ul>
+            </div>
+            <section class="skills-section"><h1><b><u>Skills</u></b></h1>
+                <h4 class="technical-skills"><b><u>Technical Skills:</u></b></h4>
+                <ul class="technical-skills">
                     <li>Front-End & Back-End</li>
                     <li>Git</li>
                     <li>Problem Solver</li>
@@ -26,18 +29,16 @@
                     <li>Microsoft Excel: VLOOKUP, Pivot, VBA, Macro.</li>
                     <li>Ubuntu</li>
                 </ul>
-            </section>
-            <section>
-                <h4><b><u>Soft Skills:</u></b></h4>
-                <ul>
+                <h4 class="soft-skills"><b><u>Soft Skills:</u></b></h4>
+                <ul class="soft-skills">
                     <li>Employee Relations</li>
                     <li>Leadership & Team Building</li>
                     <li>Survey Administration</li>
                     <li>Onboarding & Training</li>
                     <li>Employee engagements</li>
                 </ul>
-                <h3>Tools</h3>
-                <table>
+                <h3 class="tools-table"><u>Tools:</u></h3>
+                <table class="tools-table">
                     <thead>
                         <tr>
                             <th>Tool</th>
@@ -80,9 +81,8 @@
                 </table>
             </section>
             <section>
-                <h3><b><u>Projects</u></b></h3>
-                <p>
-                    <em>Stay tuned! Exciting project are on the way as I progress through the Springboard course.</p></em>
+                <h2><b><u>Projects</u></b></h2>
+                <p><em>Stay tuned! Exciting project are on the way as I progress through the Springboard course.</em></p>
             </section>
             <section>
                 <h2><u>EDUCATION</u></h2>
@@ -174,7 +174,7 @@
             </div>
             <fieldset>
                 <legend id="scheduling"> date & time? </legend>
-                <input type="datetime-local" id="scheduling" name="birthdaytime">
+                <input type="datetime-local" name="scheduling">
             </fieldset>
             <div>
                 <label for="message">Message:</label>
@@ -184,7 +184,7 @@
             </form>
             </section>
             <section>
-                <p>Le's connect and discuss more about software engineering! Find me on:</p>
+                <h5>Let's connect and discuss more about software engineering! Find me on:</h5>
                 <ul>
                 <li><a href="https://www.linkedin.com/in/loschins/" target="_blank">LinkedIn</a></li>
                 <li><a href="https://github.com/Ianloschins" target="_blank">GitHub</a></li>
