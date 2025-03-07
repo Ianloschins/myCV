@@ -1,23 +1,112 @@
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #000000;
+    color: #39FF14;
+    margin: 20px;
+    padding: 20px;
+    border: 5px solid #39FF14;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+header h1, header h2 {
+    text-align: center;
+    width: 100%;
     margin: 0;
-    padding: 0;
+}
+
+.contact-details {
+    justify-content: space-around;
+    width: 100%;
+    border-bottom: 2px solid #39FF14;
+    width: 100%;
+}
+
+/* Profile Image */
+.profile-img {
+    align-items: flex-start;
+    height: 300px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid #39FF14;
+    margin-bottom: 10px;
+    align-self: start;
+}
+
+/* Section Styling */
+section {
+    margin: 20px 0;
+    padding: 15px;
+    border-bottom: 2px solid #39FF14;
+    width: 100%;
+}
+
+/* Contact and Skills Section */
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Table Styling */
+.tools-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tools-table th, .tools-table td {
+    border: 1px solid #39FF14;
+    padding: 10px;
+    text-align: left;
+}
+
+.tools-table th {
+    background-color: #222;
+}
+
+/* Form Styling */
+form input, form select, form button {
+    margin: 5px 0;
+    border: none;
+    background: #222;
     color: #39FF14;
 }
 
-.profile-img {
-    height: 300px;
+form button {
+    background: #39FF14;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-header h1 {
-    font-size: 2.5em;
-    margin: 0;
-    position: relative;
-    text-align: center;
+form button:hover {
+    background: #00cc00;
 }
 
-* {
-    padding: 10px; /* Adjust the value as needed */
-    box-sizing: border-box; /* Ensures padding doesn't affect element width/height */
+/* Remove Outline */
+form input:focus, form select:focus {
+    outline: none;
+    border: 2px solid #39FF14;
+}
+
+/* Footer */
+footer {
+    padding-top: 20px;
+    width: 100%;
+}
+
+footer a {
+    color: #39FF14;
 }
