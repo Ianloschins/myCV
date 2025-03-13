@@ -28,18 +28,22 @@ header h1, header h2 {
 }
 
 .contact-details {
-    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align content to the right */
     width: 100%;
     border-bottom: 2px solid #39FF14;
-    width: 100%;
+    padding-bottom: 10px;
+    padding-right: 20px; /* Optional: Adjust the right spacing */
 }
+
 
 /* Profile Image */
 .profile-img {
     align-items: flex-start;
     height: 300px;
-    width: 200px;
-    border-radius: 50%;
+    width: 300px;
+    border-radius: 90%;
     border: 5px solid #39FF14;
     margin-bottom: 10px;
     align-self: start;
@@ -109,4 +113,87 @@ footer {
 
 footer a {
     color: #39FF14;
+}
+
+/* Responsive Design */
+
+/* For Tablets (Portrait & Landscape) */
+@media screen and (max-width: 1024px) {
+    body {
+        margin: 10px;
+        padding: 10px;
+        border-width: 3px;
+    }
+
+    .profile-img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .contact-details {
+        align-items: center; /* Center align contact details on smaller screens */
+        text-align: center;
+        padding-right: 0;
+    }
+}
+
+/* For Mobile Devices */
+@media screen and (max-width: 768px) {
+    body {
+        border-width: 2px;
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .contact-details {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .profile-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tools-table th, .tools-table td {
+        padding: 5px;
+    }
+
+    form input, form select, form button {
+        width: 100%;
+    }
+}
+
+/* For Small Phones (Extra Small Screens) */
+@media screen and (max-width: 480px) {
+    body {
+        margin: 5px;
+        padding: 5px;
+        border-width: 2px;
+    }
+
+    .profile-img {
+        height: 150px;
+        width: 150px;
+    }
+
+    header h1, header h2 {
+        font-size: 18px;
+    }
+
+    .tools-table {
+        font-size: 12px;
+    }
 }
