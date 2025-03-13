@@ -117,7 +117,7 @@ footer a {
 
 /* Responsive Design */
 
-/* For Tablets (Portrait & Landscape) */
+/* Tablet Adjustments */
 @media screen and (max-width: 1024px) {
     body {
         margin: 10px;
@@ -126,18 +126,19 @@ footer a {
     }
 
     .profile-img {
-        height: 250px;
-        width: 250px;
+        height: 120px;
+        width: 120px;
     }
 
     .contact-details {
-        align-items: center; /* Center align contact details on smaller screens */
+        position: relative;
+        align-items: center;
         text-align: center;
         padding-right: 0;
     }
 }
 
-/* For Mobile Devices */
+/* Mobile Adjustments */
 @media screen and (max-width: 768px) {
     body {
         border-width: 2px;
@@ -148,14 +149,18 @@ footer a {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        position: relative;
     }
 
     .profile-img {
-        height: 200px;
-        width: 200px;
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-bottom: 10px;
     }
 
     .contact-details {
+        position: relative;
         align-items: center;
         text-align: center;
         width: 100%;
@@ -176,7 +181,7 @@ footer a {
     }
 }
 
-/* For Small Phones (Extra Small Screens) */
+/* Extra Small Screens */
 @media screen and (max-width: 480px) {
     body {
         margin: 5px;
@@ -185,11 +190,11 @@ footer a {
     }
 
     .profile-img {
-        height: 150px;
-        width: 150px;
+        height: 100px;
+        width: 100px;
     }
 
-    header h1, header h2 {
+    header h1 {
         font-size: 18px;
     }
 
